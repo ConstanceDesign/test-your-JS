@@ -1,3 +1,33 @@
 .hidden {
   display: none;
 }
+
+.body {
+  display: flex;
+  background-image: url("code-image.png");
+  justify-content: center;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+  width: 70%;
+  min-width: 200px;
+  height: 80%;
+  min-height: 200px;
+  margin: 65px;
+  background-image: linear-gradient(
+    rgba(200, 250, 250, 0.75),
+    rgba(10, 75, 100, 0.3)
+  );
+  border-radius: 25px;
+  border: #8efcfd solid 5px;
+  padding: 50px;
+  box-shadow: 10px 10px 15px rgba(66, 66, 66, 0.168);
+}
+
+.roboto {
+  font-family: "Roboto", sans-serif;
+  font-size: 35px;
+}
