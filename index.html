@@ -6,28 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Test Your JS</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cherry+Cream+Soda&family=Righteous&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body class="body">
+    <header>
+      <h1 class="h1">Test Your JS</h1>
+    </header>
+
+    <h2 class="countdown">Countdown: 0</h2>
     <div class="wrapper">
       <!-- Start Page -->
       <div id="startpage">
-        <h1 class="roboto">Test Your JS Quiz</h1>
         <p>
-          Try your luck with Javascript! Answer these questions within the time
-          limit.
+          Try your luck with Javascript! Answer five questions correctly before
+          the countdown times out.
         </p>
-        <button id="start-quiz">START QUIZ</button>
+        <button id="start-quiz">START</button>
       </div>
 
       <!-- Questions Container -->
       <div id="questions" class="hidden">
+        <h1 id="headline"></h1>
         <h2 id="question-title"></h2>
         <div id="options" class="options"></div>
-        <button id="next-button">Next</button>
       </div>
     </div>
 
+    <!-- Footer -->
+    <footer class="footer">
+      <p class="p">&copy; 2021 TnC</p>
+    </footer>
+
+    <!-- Javascript Docs -->
     <script src="questions.js"></script>
     <script src="script.js"></script>
   </body>
