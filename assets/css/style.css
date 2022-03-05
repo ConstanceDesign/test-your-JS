@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+.hidden {
+  display: none;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  position: fixed;
+  margin: auto;
+  background-color: #00ccff;
+  padding: 10px 30px;
+  text-align: left;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  z-index: 4;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  background-color: #00ccff;
+  color: #000;
+  padding: 20px 30px;
+  font-size: 20px;
+  text-align: left;
+  font-family: "Cherry Cream Soda", cursive;
+}
+
+.title {
+  font-family: "Cherry Cream Soda", cursive;
+  font-size: 25px;
+  text-align: center;
+  padding-bottom: 15pt;
+}
+
+.timer {
+  text-align: right;
+  padding: 15px 25px;
+  margin-bottom: 25px;
+  font-family: "Cherry Cream Soda", cursive;
+  font-size: 20px;
+  color: #f7f74e;
+}
+
+html,
+body {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  height: 100%;
+  margin: auto;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px) saturate(150%);
+  background-image: url("./assets/images/code-image.png");
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.wrapper {
+  display: flex;
+  align: left;
+  padding: 40px;
+  margin: auto;
+  margin-bottom: 100vmax;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+  width: 70%;
+  min-width: 200px;
+  background-image: linear-gradient(
+    rgba(200, 250, 250, 0.85),
+    rgba(100, 200, 200, 0.5)
+  );
+  z-index: 2;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* button {
+  display: center;
+  padding: 15px 15px;
+  border-radius: 50px;
+  border: black solid 0px;
+  width: 190px;
+  background-color: #f05f66;
+  font-family: "Cherry Cream Soda", cursive;
+  font-weight: bold;
+  font-size: 21px;
+  color: rgb(0, 0, 0);
+  position: absolute;
+  margin: 150px 0px 0px 0px;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+} */
+
+/* button:hover {
+  background-color: #f05;
+} */

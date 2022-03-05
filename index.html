@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Test Your JS</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,32 +19,41 @@
       <h1 class="h1">Test Your JS</h1>
     </header>
 
-    <h2 class="countdown">Countdown: 0</h2>
-    <div class="wrapper">
-      <!-- Start Page -->
-      <div id="startpage">
-        <p>
-          Try your luck with Javascript! Answer five questions correctly before
-          the countdown times out.
-        </p>
-        <button id="start-quiz">START</button>
+    <!-- Background -->
+    <div class="background-image">
+      <!-- Countdown -->
+      <h2 id="timerEl" class="timer">Countdown: 0</h2>
+
+      <!-- Content Area -->
+      <div class="wrapper">
+        <!-- Start Page -->
+        <div id="startpage">
+          <h2 class="title">Try your luck with Javascript!</h2>
+          <p>
+            Answer five standard coding questions correctly before the Countdown
+            times out.
+          </p>
+          <button id="start-quiz">START</button>
+        </div>
+
+        <!-- Questions Container -->
+        <div id="questions" class="hidden">
+          <h1 id="headline"></h1>
+          <h2 id="question-title"></h2>
+          <div id="options" class="options">
+            <ul id="options-list"></ul>
+          </div>
+        </div>
       </div>
 
-      <!-- Questions Container -->
-      <div id="questions" class="hidden">
-        <h1 id="headline"></h1>
-        <h2 id="question-title"></h2>
-        <div id="options" class="options"></div>
-      </div>
+      <!-- Footer -->
+      <footer class="footer">
+        <p class="p">&copy; 2021 TnC</p>
+      </footer>
     </div>
 
-    <!-- Footer -->
-    <footer class="footer">
-      <p class="p">&copy; 2021 TnC</p>
-    </footer>
-
     <!-- Javascript Docs -->
-    <script src="questions.js"></script>
-    <script src="script.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/questions.js"></script>
   </body>
 </html>
